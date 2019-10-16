@@ -46,7 +46,7 @@ body {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .current-turn {
-  font-size: 20px;
+  font-size: 25px;
 }
 .main-grid {
   display: flex;
