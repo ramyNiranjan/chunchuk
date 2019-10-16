@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script
+      src="https://kit.fontawesome.com/7653ca745b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./main.css" />
+    <title>Chun Chuk</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav>
+        <div>
+          Chun & Chuk
+        </div>
+      </nav>
+    </header>
+    <section id="main-area">
+      <div class="info-count">
+        <div class="current-turn">
+          Current Turn :
+          <span class="info"><i class="far fa-circle x-team"></i></span>
+        </div>
+        <div>
+          No Of Turns <i class="far fa-circle x-team"></i> :
+          <span class="x-count"></span>
+        </div>
+        <div>
+          No Of Turns <i class="fas fa-times y-team"></i> :
+          <span class="y-count"></span>
+        </div>
+      </div>
+      
+        <div class="main-grid"></ul>
+    
+    </section>
+    <div class="model-wrapper">
+      <div class="model-container">
+            <div class="close">x</div>
+            <div class="popup-content">
+              <h1 class="win-player"></h1>
+              <p class="total-turns"></p>
+              <button class="refresh">Player Again</button>
+            </div>
+      </div>
+   
+    </div>
+    <script src="./gridArray.js"></script>
+    <script src="./modal.js"></script>
+    <script src="./gameBrain.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
