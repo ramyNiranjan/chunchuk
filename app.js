@@ -9,7 +9,7 @@ let mainGrid = document.querySelector('.main-grid')
 //using all method in gridArray.js to make matrix
 creatingGrid(gridRow,gridCol,mainGrid)
 let arr2D = creatingTowDArray(gridCol, gridRow)
-initializingArr(arr2D)
+initializingArr(arr2D,gridRow,gridCol,'x')
 
 
 //selection for display

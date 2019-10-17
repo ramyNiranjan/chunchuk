@@ -27,11 +27,12 @@ const creatingTowDArray = (row, col) => {
 
 //initializing  with som dummy data to avoid undifined erro
 
-const initializingArr = (arr) => {
-    for (let i = 0; i < arr.length; i++) {
-        let tem = arr[i].length
-        for (let j = 0; j < tem; j++) {
-            arr[i][j] = 'x'
+const initializingArr = (arr,row,col,val) => {
+    for (var i = 0; i < row; i++) {
+        arr.push([]);
+        arr[i].push(new Array(col))
+        for (var j = 0; j < col; j++) {
+            arr[i][j] = val;
         }
     }
 }
