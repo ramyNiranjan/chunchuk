@@ -50,10 +50,11 @@ body {
 }
 .main-grid {
   display: flex;
+  flex-direction: column;
 }
 .main-grid .grid-row {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 .main-grid .grid-col {
   height: 30px;

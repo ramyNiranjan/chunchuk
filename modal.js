@@ -12,6 +12,7 @@ close.addEventListener('click', e => {
     document.location.reload(true)
 })
 modal.addEventListener('click', e => {
+    
     modal.style.display = 'none'
     document.location.reload(true)
 })

@@ -28,7 +28,7 @@ let yEnterCount=0
 
 //using event bubble and setting up everything
 mainGrid.addEventListener('click',e=>{
- 
+ console.log(e)
     if (e.target.localName==='button'){
         if (currentPlayer) {
             

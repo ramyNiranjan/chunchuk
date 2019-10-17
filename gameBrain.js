@@ -90,4 +90,3 @@ const checkWinner = (arr, player) => {
 
 }
 
-// checkDiagonallyOtherSide(arr, player)
