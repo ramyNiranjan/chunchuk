@@ -1,15 +1,17 @@
 
 // creating grid of matrix
-let gridCol=20
-let gridRow=20
+let gridCol=10
+let gridRow=10
 
 //main grid div selection
 let mainGrid = document.querySelector('.main-grid')
 
 //using all method in gridArray.js to make matrix
 creatingGrid(gridRow,gridCol,mainGrid)
-let arr2D = creatingTowDArray(gridCol, gridRow)
-initializingArr(arr2D,gridRow,gridCol,'x')
+
+//to avoid out of boundry error making 2darray bigger than grid(matrix)
+let arr2D = creatingTowDArray(11,11)
+
 
 
 //selection for display
@@ -28,7 +30,7 @@ let yEnterCount=0
 
 //using event bubble and setting up everything
 mainGrid.addEventListener('click',e=>{
- console.log(e)
+
     if (e.target.localName==='button'){
         if (currentPlayer) {
             

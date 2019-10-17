@@ -25,17 +25,6 @@ const creatingTowDArray = (row, col) => {
     return towDArray
 }
 
-//initializing  with som dummy data to avoid undifined erro
-
-const initializingArr = (arr,row,col,val) => {
-    for (var i = 0; i < row; i++) {
-        arr.push([]);
-        arr[i].push(new Array(col))
-        for (var j = 0; j < col; j++) {
-            arr[i][j] = val;
-        }
-    }
-}
 
 // adding value to 2DArray when user click the button 
 const addingValueTo2DArray = (row, col, arr, value) => {

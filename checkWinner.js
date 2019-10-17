@@ -80,7 +80,7 @@ const checkWinner = (arr, player) => {
     if (
         checkHorizontal(arr, player) ||
         checkVertically(arr, player) ||
-        checkDiagonally(arr, player) ||
+         checkDiagonally(arr, player) ||
         checkDiagonallyOtherSide(arr, player)
         ) 
     
