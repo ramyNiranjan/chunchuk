@@ -30,3 +30,23 @@ const creatingTowDArray = (row, col) => {
 const addingValueTo2DArray = (row, col, arr, value) => {
     arr[row][col] = value
 }
+
+//taking winnig cordinates and seeting some css
+
+const settingColorToWinningCordinates = (str) => {
+    let arr = []
+
+    let splitArr = cordinates.split(',')
+    for (let i = 0; i < splitArr.length; i++) {
+        arr.push(splitArr[i].split('-'))
+
+    }
+
+    for (let j = 0; j < arr.length; j++) {
+        console.log(arr[j])
+
+        let test = document.querySelector(`.grid-row[id='${arr[j][0]}'] .grid-col[id='${arr[j][1]}']`)
+        test.style.background = 'black'
+    }
+
+}

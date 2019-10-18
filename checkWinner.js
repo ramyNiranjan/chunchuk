@@ -1,4 +1,4 @@
-
+let cordinates=''
 
 const checkDiagonally = (arr, toCheck) => {
     for (i = 0; i < arr.length; ++i) {
@@ -11,8 +11,10 @@ const checkDiagonally = (arr, toCheck) => {
                 && arr[i + 2][j + 2] === toCheck
                 && arr[i + 3][j + 3] === toCheck
                 && arr[i + 4][j + 4] === toCheck
-            ) return true;
-        }
+            ) {
+                cordinates=`${i}-${j},${i+1}-${j + 1},${i+2}-${j + 2},${i+3}-${j + 3},${i+4}-${j + 4}`;
+                return cordinates
+        }  }
     }
     return false
 }
@@ -29,7 +31,9 @@ const checkDiagonallyOtherSide = (arr, toCheck) => {
                 && arr[i + 2][j - 2] === toCheck
                 && arr[i + 3][j - 3] === toCheck
                 && arr[i + 4][j - 4] === toCheck
-            ) return true;
+            ){cordinates=`${i}-${j},${i + 1}-${j - 1},${i + 2}-${j - 2},${i + 3}-${j - 3},${i + 4}-${j - 4}`;
+              return cordinates}
+               
         }
     }
     return false
@@ -48,7 +52,11 @@ const checkHorizontal = (arr, toCheck) => {
                 && arr[i][j + 2] === toCheck
                 && arr[i][j + 3] === toCheck
                 && arr[i][j + 4] === toCheck
-            ) return true;
+            ) {
+                cordinates = `${i}-${j},${i}-${j + 1},${i}-${j + 2},${i}-${j + 3},${i}-${j + 4}`;
+                return cordinates
+            }
+            
         }
     }
     return false
@@ -67,14 +75,16 @@ const checkVertically = (arr, toCheck) => {
                 && arr[j + 2][i] === toCheck
                 && arr[j + 3][i] === toCheck
                 && arr[j + 4][i] === toCheck
-            ) return true;
+            ) {
+                cordinates = `${j}-${i},${j + 1}-${i},${j + 2}-${i},${j + 3}-${i},${j + 4}-${i}`;
+                return cordinates
+            }
+
+             
         }
     }
     return false
 }
-
-
-
 
 const checkWinner = (arr, player) => {
     if (
@@ -84,7 +94,7 @@ const checkWinner = (arr, player) => {
         checkDiagonallyOtherSide(arr, player)
         ) 
     
-        return true
+        return cordinates
     else
         return false
 

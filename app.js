@@ -27,10 +27,13 @@ let currentPlayer=true
 let xEnterCount=0
 let yEnterCount=0
 
+//to cordinates
+let rowSCols=''
+
 
 //using event bubble and setting up everything
 mainGrid.addEventListener('click',e=>{
-
+    
     if (e.target.localName==='button'){
         if (currentPlayer) {
             
@@ -44,11 +47,17 @@ mainGrid.addEventListener('click',e=>{
             info.innerHTML = teamY
             xCount.innerHTML = xEnterCount.toString()
             e.target.disabled = true
-            // cheking the winner
             if(checkWinner(arr2D,'xx')){
-                modal.style.display='block'
-                winPlayer.innerHTML = `Player ${teamX} Won`
-                totalTurns.textContent = `Total Turns :${xEnterCount+yEnterCount}`
+                rowSCols = (checkWinner(arr2D, 'xx'))
+                settingColorToWinningCordinates(rowSCols)
+                setTimeout(() => {
+                    modal.style.display = 'block'
+                    winPlayer.innerHTML = `Player ${teamX} Won`
+                    totalTurns.textContent = `Total Turns :${xEnterCount + yEnterCount}`
+                }, 1500);
+               
+              
+               
             }
            
         } else {
@@ -65,9 +74,15 @@ mainGrid.addEventListener('click',e=>{
             e.target.disabled = true
             // cheking the winner
             if (checkWinner(arr2D, 'yy')){
-                modal.style.display = 'block'
-                winPlayer.innerHTML = `Player ${teamY} Won`
-                totalTurns.textContent = `Total Turns :${xEnterCount + yEnterCount}`
+                rowSCols = (checkWinner(arr2D, 'yy'))
+                settingColorToWinningCordinates(rowSCols)
+                setTimeout(() => {
+                    modal.style.display = 'block'
+                    winPlayer.innerHTML = `Player ${teamY} Won`
+                    totalTurns.textContent = `Total Turns :${xEnterCount + yEnterCount}`
+                }, 1500);
+               
+               
             }
                
             
