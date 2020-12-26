@@ -8,4 +8,4 @@ This is a my version of the tic-tac-toe and this is very fun game to play with y
 - Game will automatically find a vinner if the five match found.
 
 ***please not that project layout is some what responsive, may not ideal to play in mobile version***
-***Idea here to show case the algorithm***
+###### ***Idea here to show case the algorithm***
