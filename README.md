@@ -9,3 +9,4 @@ This is a my version of the tic-tac-toe and this is very fun game to play with y
 
 ***please not that project layout is some what responsive, may not ideal to play in mobile version***
 ###### ***Idea here to show case the algorithm***
+###### [Click here to see live demo](https://chunchuk.netlify.app/)
