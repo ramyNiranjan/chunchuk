@@ -1,4 +1,4 @@
-# chunchuk eka tic-tac-toe
+# Chunchuk eka tic-tac-toe
 In this project, i show case how to build a tic tack toe algorithm with javascript
 This is a my version of the tic-tac-toe and this is very fun game to play with your friend
 
